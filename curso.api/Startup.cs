@@ -78,6 +78,9 @@ namespace curso.api
 
             app.UseRouting();
 
+            //tem que ativar para o token do jwt funcionar
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
